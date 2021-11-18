@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{layout::layout(~{::body/content()})}">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/css/box23.css">
+	<link rel="stylesheet" type="text/css" href="/css/haikei2.css">
+</head>
+<body>
+<div class="gazou">
+<a href="/profile" class="btn btn-solid-silver"><span th:each="word : ${session.Id}"
+            th:text="${word.NAME}"></font></span>
+            <img th:each="word : ${session.gazou}"
+            th:src="${word.IMGPATH}" width ="40" height="40"></img></a>
+		<tr th:each="word : ${session.foroList}"><div class="box23">
+            <h3><td th:text="${word.AITE}"></td></h3>
+           </div>
+            </tr>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            </div>  
+</body>
+</html>

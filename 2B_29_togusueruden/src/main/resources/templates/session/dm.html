@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{layout::layout(~{::body/content()})}">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/css/box23.css">
+	<link rel="stylesheet" type="text/css" href="/css/haikei2.css">
+</head>
+<body>
+<div class="gazou">
+<h1><font color="white"><span th:each="word : ${session.dmList}"
+            th:text="${word.NAME}"></span>のdmへ
+            <img th:each="word : ${session.gazou2}"
+            th:src="${word.IMGPATH}" width ="40" height="40"></img></h1>
+             <form method="post" action="/dm">
+             <textarea style="background-color:transparent;" class="fc" name="dmnaiyou"></textarea>
+	<input type="submit" value="送る">
+	</form>
+		<tr th:each="word : ${session.dmList2}"><div class="box23">
+            <h3><td th:text="${word.JIBUN}"></td>⇒
+            <td th:text="${word.AITE}"></td></h3>
+            <td th:text="${word.NAIYOU}"></td>
+           </div>
+            </tr>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+             <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            </div>
+</body>
+</html>

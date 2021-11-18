@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{layout::layout(~{::body/content()})}">
+<head>
+
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/css/haikei2.css">
+	<link rel="stylesheet" type="text/css" href="/css/box23.css">
+</head>
+<body>
+
+<div class="gazou">
+	<a href="/profile" class="btn btn-solid-silver"><span th:each="word : ${session.Id}"
+            th:text="${word.NAME}"></span>
+            <img th:each="word : ${session.gazou}"
+            th:src="${word.IMGPATH}" width ="40" height="40"></img></a></h1>
+            <form method="post" action="/toukou">
+	<textarea style="background-color:transparent;" class="fc" name="toko"></textarea>
+	<a class="btn btn-border"><input type="submit" value="投稿"></a>
+	</form>
+	 <form method="post" action="/toukou2">
+	 <textarea style="background-color:transparent;" class="fc" name="kennsaku"></textarea>
+	<a class="btn btn-border"><input type="submit" value="検索"></a>
+	</form>
+	<tr th:each="word : ${session.tokoList}"><div class="box23">
+            <h3><td th:text="${word.NAME}"></td>:</h3>
+            <td th:text="${word.TOKO}"></td></div>
+            </tr>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+              </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.box23 {
+	width: 200px;
+  height: auto;
+    position: relative;
+    margin: 2em 0 2em 40px;
+    padding: 8px 15px;
+    background: rgb(192, 192, 192);
+    border-radius: 30px;
+}
+.box23:before{font-family: FontAwesome;
+    content: "\f111";
+    position: absolute;
+    font-size: 15px;
+    left: -40px;
+    bottom: 0;
+    color: rgb(192, 192, 192);
+}
+.box23:after{
+    font-family: FontAwesome;
+    content: "\f111";
+    position: absolute;
+    font-size: 23px;
+    left: -23px;
+    bottom: 0;
+    color: rgb(192, 192, 192);
+}
+.box23 p {
+    margin: 0; 
+    padding: 0;
+}
+div.left {
+    text-align: left; 
+}
+div.center {
+    text-align: center; 
+}
+div.right {
+    text-align: right; 
+}

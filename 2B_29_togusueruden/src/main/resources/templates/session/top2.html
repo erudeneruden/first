@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{layout::layout(~{::body/content()})}">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/css/haikei2.css">
+	<link rel="stylesheet" type="text/css" href="/css/box23.css">
+</head>
+<body>
+<div class="gazou">
+	<a href="/profile" class="btn btn-solid-silver"><span th:each="word : ${session.Id}"
+            th:text="${word.NAME}"></font></span>
+            <img th:each="word : ${session.gazou}"
+            th:src="${word.IMGPATH}" width ="40" height="40"></img></a>
+            <form method="post" action="/toukou">
+	<textarea style="background-color:transparent;" class="fc" name="toko"></textarea>
+	<a class="btn btn-border"><input type="submit" value="投稿"></a>
+	</form>
+	 <form method="post" action="/toukou2">
+	<textarea style="background-color:transparent;" class="fc" name="kennsaku"></textarea>
+	<a class="btn btn-border"><input type="submit" value="検索"></a>
+	</form>
+	<h2><span style="color:white"><p th:text="${session.error}"></span></h2>
+	
+	<tr th:each="word : ${session.tokoList2}"><div class="box23">
+	
+            <h3 style="color:black">
+            <span th:text="${word.NAME}"></span>:
+            <a href="/dm"><img src="img/09.png" width ="30" height="30">
+            </a>
+            <div style="display:inline-flex">
+	<form method="post" action="/foro"><input type="image" src="img/10.png" width ="30" height="30">
+	</form>
+            <form method="post" action="/foro2"><input type="image" src="img/11.png" width ="30" height="30">
+            </form>
+            </div>
+            </h3>
+            </td>
+            <span style="color:black"><td th:text="${word.TOKO}"></td></span>
+           </div>
+            </tr>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+          </div> 
+</body>
+</html>
